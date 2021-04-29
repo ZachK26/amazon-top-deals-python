@@ -114,7 +114,7 @@ class Crawler:
             f.write(str([self.products[x] for x in temp if self.products[x]["price_diff"] > 0]))
     
         # Get the top 5 deals
-        temp = temp[0: 5]
+        temp = temp[0: 10]
 
         # print the top 5 deals
         return [self.products[x] for x in temp]
